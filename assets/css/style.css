@@ -141,7 +141,7 @@ nav {
 
 /* ---- WRAPPER DESIGN ----*/
 .wrapper {
-    height: 10vw;
+    padding-inline: 10vw;
 }
 
 /* ---- FEATURED BOX ----*/
@@ -154,6 +154,7 @@ nav {
     padding: 90px 5% 0;
     gap: 20px;
     min-height: 700px;
+    padding-top: 90px;
 }
 
 /* ---- FEATURED TEXT BOX ----*/
@@ -261,11 +262,10 @@ nav {
 
 /* ---- MEDIA QUERY == 1024px / RESPONSIVE ----*/
 @media only screen and (max-width: 1024px) {
-    .featured-text {
+    .featured-text{
         padding: 0;
     }
-
-    .imag, .imag img {
+    .image, .image img{
         width: 320px;
         height: 320px;
     }
@@ -273,11 +273,11 @@ nav {
 
 /* ---- MEDIA QUERY == 900px / RESPONSIVE ----*/
 @media only screen and (max-width: 900px) {
-    .nav-menu.responsive {
+    .nav-menu.responsive{
         left: 0;
     }
 
-    .nav-menu {
+    .nav-menu{
         position: fixed;
         top: 90px;
         left: -100%;
@@ -292,11 +292,11 @@ nav {
         transition: .3s;
     }
 
-    .nav_menu_list {
+    .nav_menu_list{
         flex-direction: column;
     }
 
-    .nav-menu-btn {
+    .nav-menu-btn{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -305,57 +305,23 @@ nav {
     .featured-box {
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-        padding: 120px 10px 0;
+        padding-top: 90px;
+        min-height: auto;
+        height: auto;
+    }
+
+    .featured-image {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
     }
 
     .featured-text {
         width: 100%;
-        order: 2;
-        justify-content: center;
-        align-content: flex-start;
-        min-height: 60vh;
-    }
-
-    .featured-imag {
-        order: 1;
-        justify-content: center;
-        min-height: 150px;
-        width: 100%;
-        margin-top: 65px;
-    }
-    
-    .image, .image img {
-        width: 150px;
-        height: 150px;
     }
 }
 
 /* ---- MEDIA QUERY == 540px / RESPONSIVE ----*/
 @media only screen and (max-width: 540px) {
-    .nav-name {
-        font-size: 30px;
-    }
-
-    .featured-box {
-        padding: 100px 10px 0; /* Increase padding to ensure the image is not hidden */
-        gap: 20px;
-    }
-
-    .featured-imag {
-        width: 180px;
-        height: 180px;
-    }
-
-    .featured-text {
-        width: 100%;
-    }
-
-    .featured-name {
-        font-size: 50px;
-    }
-
-    .social_icons {
-        gap: 10px;
-    }
+    
 }
