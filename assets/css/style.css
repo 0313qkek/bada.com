@@ -271,7 +271,7 @@ nav {
     gap: 20px;
 }
 
-.top-header-left {
+.top-header {
     font-size: 50px;
     font-weight: 400;
     display: flex;
@@ -279,7 +279,7 @@ nav {
     gap: 20px;
 }
 
-.top-header-left::after {
+.top-header::after {
     content: '';
     flex-grow: 1;
     height: 1px;
@@ -296,12 +296,18 @@ nav {
 }
 
 /* ---- ABOUT SKILLS BOXES ---- */
+.skills-box-header {
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
 .skills-boxes {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 30px;
+    padding-top: 20px;
     gap: 20px;
 }
 
@@ -338,12 +344,17 @@ nav {
 
 /* ---- PERSONAL JOURNEY ---- */
 .personal-journey {
-    padding-top: 30px;
+    padding-top: 40px;
+}
+
+.jour-box-header {
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .jour-boxes {
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .jour-box {
@@ -355,16 +366,18 @@ nav {
 }
 
 .jour-header {
-    font-size: 20px;
     line-height: 1.3;
+    color: var(--third-color);
 }
 
 .jour-header p {
+    font-size: 20px;
     font-weight: 600;
 }
 
 .jour-header span {
     font-weight: 500;
+    font-size: 17px;
 }
 
 .jour-info {
@@ -375,21 +388,6 @@ nav {
 }
 
 /* ---- PROJECTS ---- */
-.top-header-right {
-    font-size: 50px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.top-header-right::before {
-    content: '';
-    flex-grow: 1;
-    height: 1px;
-    background-color: var(--text-color);
-}
-
 .projects-boxes {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -409,18 +407,20 @@ nav {
 }
 
 .project-header {
+    color: var(--third-color);
     padding-bottom: 10px;
-    font-size: 20px;
 }
 
 .project-header p {
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 2;
+    font-size: 20px;
 }
 
 .project-header span {
     display: block;
     font-weight: 500;
+    font-size: 17px;
 }
 
 .project-info {
