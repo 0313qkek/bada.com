@@ -49,7 +49,7 @@ html {
 /* ---- REUSABLE CSS ----*/
 
 /* ---- GLOBAL BUTTON DESIGN ----*/
-.btn {
+.resume-btn {
     font-weight: 500;
     padding: 12px 20px;
     background: var(--first-color);
@@ -60,11 +60,11 @@ html {
     font-size: 20px;
 }
 
-.btn>i {
+.resume-btn>i {
     margin-left: 10px;
 }
 
-.btn:hover {
+.resume-btn:hover {
     background: var(--second-color);
     color: var(--color-white);
 }
@@ -266,12 +266,12 @@ nav {
     display: flex;
     align-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     padding: 90px 5% 0;
     gap: 20px;
 }
 
-.top-header {
+.top-header-left {
     font-size: 50px;
     font-weight: 400;
     display: flex;
@@ -279,7 +279,7 @@ nav {
     gap: 20px;
 }
 
-.top-header::after {
+.top-header-left::after {
     content: '';
     flex-grow: 1;
     height: 1px;
@@ -374,6 +374,87 @@ nav {
     line-height: 1.5;
 }
 
+/* ---- PROJECTS ---- */
+.top-header-right {
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-header-right::before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--text-color);
+}
+
+.projects-boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.project-box {
+    padding: 15px;
+    width: 100%;
+    background: var(--first-color);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-header {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-header p {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.project-header span {
+    display: block;
+    font-weight: 500;
+}
+
+.project-info {
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.project-button {
+    padding-top: 20px;
+}
+
+.project-btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: var(--second-color);
+    color: var(--color-white);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.project-btn>i {
+    margin-left: 10px;
+}
+
+.project-btn:hover {
+    background: var(--third-color);
+    color: var(--color-white);
+}
+
 /* ---- MEDIA QUERY == 1024px / RESPONSIVE ----*/
 @media only screen and (max-width: 1024px) {
     .featured-text{
@@ -445,6 +526,17 @@ nav {
     }
 
     .skill-box {
+        height: auto;
+    }
+
+    .projects-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .project-box {
         height: auto;
     }
 }
